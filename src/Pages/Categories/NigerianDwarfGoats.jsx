@@ -49,7 +49,7 @@ const NigerianDwarfGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Nigerian Dwarf Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/NigerianDwarfGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/NigerianDwarfGoats" />
               <meta name="Title" content="Nigerian Dwarf Goats" />
               <meta name="Description" content="Discover everything about Nigerian Dwarf Goats, from care tips to breed traits. Learn why they’re a popular choice for small farms and homes." />
               <meta name="robots" content="follow, index" />
@@ -71,7 +71,7 @@ const NigerianDwarfGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Nigerian Dwarf Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/NigerianDwarfGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/NigerianDwarfGoats" />
               <meta name="Title" content="Nigerian Dwarf Goats" />
               <meta name="Description" content="Discover everything about Nigerian Dwarf Goats, from care tips to breed traits. Learn why they’re a popular choice for small farms and homes." />
               <meta name="robots" content="follow, index" />

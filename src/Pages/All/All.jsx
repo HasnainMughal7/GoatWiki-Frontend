@@ -42,7 +42,7 @@ const All = () => {
         <HelmetProvider>
           <Helmet>
             <title>All Posts - GoatWiki</title>
-            <link rel="canonical" href="https://goatwiki.com/AllPosts" />
+            <link rel="canonical" href="https://goatwiki.vercel.app/AllPosts" />
             <meta name="Title" content="All Posts" />
             <meta name="Description" content="Explore our all the posts up till now and derive the immense knowledge!" />
             <meta name="keywords" content="goatwiki, goat wiki, goatwiki all posts" />

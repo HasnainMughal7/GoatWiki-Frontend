@@ -56,13 +56,13 @@ const Home = () => {
         <HelmetProvider>
           <Helmet>
             <title>Home - GoatWiki</title>
-            <link rel="canonical" href="https://goatwiki.com/" />
+            <link rel="canonical" href="https://goatwiki.vercel.app/" />
             <script type="application/ld+json">
               {`{
               "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "GoatWiki",
-            "url": "https://goatwiki.com/"
+            "url": "https://goatwiki.vercel.app/"
             }`}
             </script>
             <meta name='Title' content='Home - GoatWiki' />

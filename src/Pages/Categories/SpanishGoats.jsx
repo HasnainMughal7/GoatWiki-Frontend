@@ -49,7 +49,7 @@ const SpanishGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Spanish Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/SpanishGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/SpanishGoats" />
               <meta name="Title" content="Spanish Goats" />
               <meta name="Description" content="Explore the world of Spanish goats, known for their hardy nature and unique traits. Discover breed profiles, care tips, and more on Goat Wiki." />
               <meta name="robots" content="follow, index" />
@@ -70,7 +70,7 @@ const SpanishGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Spanish Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/SpanishGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/SpanishGoats" />
               <meta name="Title" content="Spanish Goats" />
               <meta name="Description" content="Explore the world of Spanish goats, known for their hardy nature and unique traits. Discover breed profiles, care tips, and more on Goat Wiki." />
               <meta name="robots" content="follow, index" />

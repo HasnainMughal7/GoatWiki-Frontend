@@ -125,7 +125,7 @@ const Post = () => {
           </Helmet>
           <Helmet>
             <title>{DisplayPost.metaTitle}</title>
-            <link rel="canonical" href={`https://goatwiki.com/Post/${DisplayPost.metaPermalink}`} />
+            <link rel="canonical" href={`https://goatwiki.vercel.app/Post/${DisplayPost.metaPermalink}`} />
             <meta name="title" content={DisplayPost.metaTitle} />
             <meta name="description" content={DisplayPost.metaDescription} />
             <meta name="publish_date" content={DisplayPost.PublishingDate} />
@@ -138,7 +138,7 @@ const Post = () => {
             <meta property="og:image" content={DisplayPost.FPic} />
             <meta property="og:image:width" content="1200" />
             <meta property="og:image:height" content="630" />
-            <meta property="og:url" content={`https://goatwiki.com/Post/${DisplayPost.metaPermalink}`} />
+            <meta property="og:url" content={`https://goatwiki.vercel.app/Post/${DisplayPost.metaPermalink}`} />
             <meta property="article:published_time" content={DisplayPost.PublishingDate} />
 
             <meta name="twitter:card" content="summary_large_image" />
@@ -156,10 +156,10 @@ const Post = () => {
                 "@type": "BlogPosting",
                 "mainEntityOfPage": {
                   "@type": "WebPage",
-                  "@id": "https://goatwiki.com/Post/${DisplayPost.metaPermalink}"
+                  "@id": "https://goatwiki.vercel.app/Post/${DisplayPost.metaPermalink}"
                 },
                 "headline": "${DisplayPost.metaTitle}",
-                "image": "https://goatwiki.com${DisplayPost.FPic}",
+                "image": "https://goatwiki.vercel.app${DisplayPost.FPic}",
                 "author": {
                   "@type": "Organization",
                   "name": "GoatWiki"
@@ -169,7 +169,7 @@ const Post = () => {
                   "name": "GoatWiki",
                   "logo": {
                     "@type": "ImageObject",
-                    "url": "https://goatwiki.com/assets/LOGO.png"
+                    "url": "https://goatwiki.vercel.app/assets/LOGO.png"
                   }
                 },
                 "description": "${DisplayPost.metaDescription}",

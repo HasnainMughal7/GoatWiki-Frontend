@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://goatwiki.com/sitemap.xml
+Sitemap: https://goatwiki.vercel.app/sitemap.xml

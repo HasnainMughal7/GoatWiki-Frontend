@@ -48,7 +48,7 @@ const BoerGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Boer Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/BoerGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/BoerGoats" />
               <meta name="Title" content="Boer Goats" />
               <meta name="Description" content="Explore our Boer goats category for in-depth articles on this robust breed. Learn about care, breeding, and more on Goat Wiki." />
               <meta name="robots" content="follow, index" />
@@ -70,7 +70,7 @@ const BoerGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Boer Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/BoerGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/BoerGoats" />
               <meta name="Title" content="Boer Goats" />
               <meta name="Description" content="Explore our Boer goats category for in-depth articles on this robust breed. Learn about care, breeding, and more on Goat Wiki." />
               <meta name="robots" content="follow, index" />

@@ -48,7 +48,7 @@ const KikoGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Kiko Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/KikoGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/KikoGoats" />
               <meta name="Title" content="Kiko Goats" />
               <meta name="Description" content="Explore the Kiko goats' characteristics, history, and care tips. Learn all about this hardy and productive breed on Goat Wiki." />
               <meta name="robots" content="follow, index" />
@@ -70,7 +70,7 @@ const KikoGoats = () => {
           <HelmetProvider>
             <Helmet>
               <title>Kiko Goats - GoatWiki</title>
-              <link rel="canonical" href="https://goatwiki.com/KikoGoats" />
+              <link rel="canonical" href="https://goatwiki.vercel.app/KikoGoats" />
               <meta name="Title" content="Kiko Goats" />
               <meta name="Description" content="Explore the Kiko goats' characteristics, history, and care tips. Learn all about this hardy and productive breed on Goat Wiki." />
               <meta name="robots" content="follow, index" />
