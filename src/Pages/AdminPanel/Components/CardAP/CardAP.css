@@ -1,0 +1,116 @@
+:root {
+    --color-1: #DEF9C4;
+    --color-2: #9CDBA6;
+    --color-3: #50B498;
+    --color-4: #478485;
+
+    /* .lobster-two-regular {
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .bebas-neue-regular {
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .comfortaa-<uniquifier> {
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }   
+    */
+}
+
+.CardAPNavlink{
+    height: 81%;
+    width: 40%;
+    display: flex;
+    background-color: var(--color-3);
+    border-radius: 9px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.CardAPContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-3);
+    border: 2px solid gray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 9px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+
+.CardAPContainer:hover {
+    scale: 1.05;
+    border: 2px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+}
+
+.CardAPPic {
+    height: 60%;
+    width: auto;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+
+.CardAPPic img {
+    width: 100%;
+    height: 100%;
+}
+
+.CardAPTitle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.CardAPTitle p {
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+.CardAPEndContent {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CardAPEndContent p {
+    font-size: 14px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .CardAPNavlink{
+        width: 90%;
+    }
+}

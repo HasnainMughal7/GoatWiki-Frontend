@@ -1,0 +1,534 @@
+:root {
+    --color-1: #DEF9C4;
+    --color-2: #9CDBA6;
+    --color-3: #50B498;
+    --color-4: #478485;
+
+    /* .lobster-two-regular {
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .bebas-neue-regular {
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }   
+    */
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.NmainContainer {
+    width: 99.8%;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    position: fixed;
+    top: 0.2%;
+    left: 0;
+    z-index: 1000;
+    transition-duration: 900ms;
+    background-color: var(--color-2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.NmainContainerAnim {
+    animation: NavAnimation 2500ms cubic-bezier(0.68, -0.1, 0.27, 1);
+}
+
+.NavElementsAnim {
+    animation: NavElementsAnimation 2500ms cubic-bezier(0.8, 0, 1, 1);
+}
+
+.NavLogoAnim {
+    animation: LogoAnimation 2500ms ease-in-out;
+}
+
+@keyframes NavAnimation {
+    from {
+        width: 5%;
+        border-radius: 45%;
+        margin-left: 50%;
+    }
+
+    to {
+        width: 99.8%;
+        border-radius: 0;
+    }
+}
+
+@keyframes NavElementsAnimation {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes LogoAnimation {
+    from {
+        height: 8vh;
+    }
+
+    to {
+        height: 6vh;
+    }
+}
+
+.Navsticky {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    height: 11vh;
+    width: 96%;
+    background-color: var(--color-3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 800ms;
+
+    .rightContainer button {
+        background-color: var(--color-1);
+    }
+
+    .dropContent {
+        background-color: transparent;
+    }
+}
+
+.leftContainerNavlink {
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.leftContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.leftContainer img {
+    height: 7vh;
+}
+
+.leftContainer h1 {
+    font-size: 2.4rem;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.centerContainer {
+    width: 35%;
+    height: 52%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SearchBar {
+    border: none;
+    background: transparent;
+    height: 98%;
+    width: 90%;
+    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.SearchBar:focus {
+    outline: none;
+}
+
+.centerContainer img {
+    height: 30px;
+    cursor: pointer;
+}
+
+.rightContainer {
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    gap: 1vw;
+}
+
+.rightContainer button {
+    height: 50%;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-3);
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.cateNavl {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    transition-duration: 500ms;
+    border-radius: 10px;
+}
+
+.cateNavl:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-5px);
+}
+
+.rightContainer button img {
+    height: 3vh;
+}
+
+.rightContainerNavlink:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-5px);
+}
+
+.activeR {
+    transform: translateY(-5px);
+    scale: 1.1;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 18px 0 rgba(0, 0, 0, 0.19);
+}
+
+#arrowDown {
+    display: none;
+}
+
+.cate:hover {
+    #arrowUp {
+        display: none;
+    }
+
+    #arrowDown {
+        display: inline-block;
+    }
+}
+
+.dropdown {
+    position: relative;
+    height: 50%;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropdown button {
+    height: 100%;
+    width: 100%;
+}
+
+.dropContent {
+    display: none;
+    position: absolute;
+    background: transparent;
+    top: 100%;
+    width: 16vw;
+    z-index: 1;
+    transition-duration: 2s;
+    border-radius: 8px;
+    gap: 0.5vh;
+    overflow-x: hidden;
+}
+
+.cateNavlink {
+    min-height: 7vh;
+    width: 95%;
+    transition-duration: 600ms;
+    background: linear-gradient(110deg, var(--color-1) 20%, var(--color-4) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.cateNavlink:hover {
+    transform: translateX(5px);
+}
+
+.dropdown:hover .dropContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropContent:hover {
+    display: block;
+}
+
+.rightContainerNavlink {
+    height: 50%;
+    width: 28%;
+    text-decoration: none;
+    color: black;
+    background: var(--color-3);
+    border-radius: 10px;
+    transition-duration: 500ms;
+}
+
+.rightContainerNavlink button {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.SearchMenu {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    max-height: 35vh;
+    z-index: 1;
+    overflow-y: auto;
+    width: 35vw;
+}
+
+.SearchDrop {
+    padding: 5px;
+}
+
+.SearchDrop li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    min-height: 6vh;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.SearchDrop li:hover {
+    background-color: var(--color-1);
+}
+
+.SearchResultNavlink {
+    text-decoration: none;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.menuBtn img {
+    width: 100%;
+    height: 100%;
+}
+
+.closeBtn {
+    display: none;
+}
+
+.closeBtn img {
+    height: 100%;
+    width: 100%;
+}
+
+.MenuContainerInactive {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    .rightContainer {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .cateNavl{
+        height: 100%;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+    }
+
+    .cateNavl button{
+        font-size: 30px;
+        background: var(--color-4);
+    }
+
+    .rightContainerNavlink{
+        width: 80%;
+        height: 20%;
+        margin-top: 12%;
+        background: var(--color-4);
+        color: black;
+        text-decoration: none;
+    }
+
+    .dropdown {
+        width: 80%;
+        height: 20%;
+        margin-top: 8%;
+    }
+
+    .menuBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 14%;
+        background: var(--color-3);
+        border: 2px solid black;
+        border-radius: 8px;
+        margin-right: 2%;
+    }
+
+    .centerContainer {
+        width: 80%;
+        height: 20%;
+        margin-right: 3%;
+        border-radius: 15px;
+        margin-top: 5%;
+    }
+
+    .centerContainer img {
+        height: 40px;
+    }
+
+    .leftContainerNavlink {
+        width: 50%;
+        margin-right: 33%;
+    }
+
+    .NmainContainer {
+        justify-content: flex-end;
+    }
+
+    @keyframes NavAnimation {
+        from {
+            width: 10%;
+            border-radius: 45%;
+            margin-left: 50%;
+        }
+    
+        to {
+            width: 99.8%;
+            border-radius: 0;
+        }
+    }
+
+    .MenuContainerActive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        height: 45vh;
+        width: 70vw;
+        border-radius: 10px;
+        background: var(--color-3);
+        border: 2px solid black;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .menuBtnOpen{
+        display: none;
+        width: 0;
+    }
+    .closeBtnOpen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 14%;
+        background: var(--color-3);
+        border: 2px solid black;
+        border-radius: 8px;
+        margin-right: 2%;
+    }
+    .rightContainerNavlink button{
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .dropContent a{
+        font-size: 30px;
+    }
+    .dropdown:hover{
+        .dropContent{
+            width: 70vw;
+            height: 180vh;
+            overflow: visible;
+            right: -11%;
+        }
+    }
+    .NavElementsAnim {
+        animation: NavElementsAnimation 1400ms;
+    }
+    .SearchMenu{
+        width: 75vw;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        background: var(--color-3);
+        right: -10%;
+    }
+    .SearchDrop li{
+        border: 2px solid black;
+        background: white;
+        border-radius: 8px;
+        margin-top: 8px;
+        width: 100%;
+        height: 10vh;
+    }
+}

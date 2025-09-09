@@ -1,0 +1,378 @@
+:root {
+    --color-1: #DEF9C4;
+    --color-2: #9CDBA6;
+    --color-3: #50B498;
+    --color-4: #478485;
+
+    /* .lobster-two-regular {
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .bebas-neue-regular {
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }   
+        .comfortaa-<uniquifier> {
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    */
+}
+
+.PContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.7%;
+}
+
+.OtherThingsContainer {
+    height: fit-content;
+    max-width: 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    gap: 1vh;
+}
+
+.faqContainer {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    gap: 1vh;
+}
+
+.faqContainer h2 {
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.faqBox {
+    width: 100%;
+    height: fit-content;
+    transition-duration: 400ms;
+}
+
+
+.faqBox:hover {
+    scale: 1.07;
+
+    .ansbox {
+        display: flex;
+    }
+
+    #faqarrowDown {
+        display: inline-block;
+    }
+
+    #faqarrowUp {
+        display: none;
+    }
+}
+
+.faqBox button {
+    background-color: var(--color-3);
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ansbox {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    min-height: 15vh;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#faqarrowDown {
+    display: none;
+    width: 25px;
+}
+
+#faqarrowUp {
+    width: 25px;
+}
+
+.PMainContainer {
+    width: 82%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    background-color: var(--color-3);
+    border-radius: 15px;
+}
+
+.PTitleContainer {
+    background-size: cover;
+    background-position: center;
+    min-width: 60%;
+    min-height: 55vh;
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.PTitle {
+    min-width: 96%;
+    min-height: 94%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PTitle h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.PBox {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.DisPBox{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    background-color: #FF3131;
+    border-radius: 10px;
+}
+
+.PBox h2 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.DisPBox h2{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.PBox p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.DisPBox p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.PostAnchor {
+    text-decoration: none;
+}
+
+.PBox img {
+    max-width: 56%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.downPic{
+    max-width: 80%;
+    height: auto;
+    margin-top: 4%;
+    margin-left: 20%;
+}
+
+.PBox table {
+    width: 80%;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+.PBox thead tr {
+    height: 7vh;
+    transition-duration: 100ms;
+    background-color:#40bb55;
+}
+
+.PBox tbody tr {
+    height: 7vh;
+    transition-duration: 100ms;
+}
+
+.PBox tbody tr:nth-child(even) {
+    background-color: #c7fcd0;
+}
+
+.PBox tbody tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.PBox th {
+    font-size: 29px;
+    font-family: "Comfortaa", sans-serif;
+    border: 2px solid black;
+    background-color: #40bb55;
+}
+
+.PBox td {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.PBox tr:hover {
+    background-color: var(--color-4);
+    scale: 1.01;
+}
+
+.RelPosContainer {
+    height: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    gap: 1vh;
+}
+
+.RelPosContainer h2{
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.RelPosBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    max-width: 100%;
+}
+
+.RelPosBox a{
+    scale: 0.8;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .PContainer {
+        margin-top: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .PMainContainer {
+        width: 98%;
+    }
+
+    .PTitleContainer {
+        min-height: 40vh;
+    }
+
+    .PTitle {
+        opacity: 0.8;
+    }
+
+    .PTitle h2 {
+        text-align: center;
+    }
+
+    .PBox {
+        width: 90%;
+    }
+
+    .DisPBox{
+        width: 90%;
+    }
+
+    .PBox img {
+        max-width: 80%;
+        margin-left: 10.5%;
+    }
+
+    .downPic{
+        max-width: 100%;
+        height: auto;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+
+    .OtherThingsContainer{
+        max-width: 90%;
+    }
+
+    .PBox table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .PBox th {
+        font-size: 99%;
+    }
+
+    .PBox td {
+        font-size: 99%;
+    }
+}

@@ -1,0 +1,290 @@
+:root {
+    --color-1: #DEF9C4;
+    --color-2: #9CDBA6;
+    --color-3: #50B498;
+    --color-4: #478485;
+
+    /* .lobster-two-regular {
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .bebas-neue-regular {
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .comfortaa-<uniquifier> {
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }   
+    */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.HmainContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 8%;
+    z-index: -1;
+}
+
+.HfirstContainer {
+    background-image: url('/assets/homePic1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    transform: translateX(-100vw);
+    transition-duration: 3000ms;
+}
+
+.HTitle {
+    width: 80%;
+    height: 18%;
+    background-color: #ffffff;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.HFirstConatinerAnim {
+    transform: translateX(0px);
+}
+
+.HTitle {
+    font-size: 60px;
+    font-family: "Lobster Two", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.Habout {
+    width: 98%;
+    height: 75vh;
+    background-color: #ffffff;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding-left: 2px;
+}
+
+.HaboutP {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 3500ms;
+    transition-duration: 1600ms;
+    text-align: center;
+}
+
+.HaboutPAnim {
+    opacity: 1;
+    visibility: visible;
+}
+
+.RecentPostContainer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition-duration: 300ms;
+}
+
+.RPTitleContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.RPTitleContainer hr {
+    height: 0.5vh;
+    width: 42%;
+    background-color: var(--color-3);
+    border-radius: 5px;
+}
+
+.RPTitleContainer p {
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.RPosts {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.RPosts1 {
+    width: 100%;
+    height: 52vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s ease-out;
+}
+
+.RPosts2 {
+    width: 100%;
+    height: 52vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: transform 0.3s ease-out;
+    margin-top: 8vh;
+}
+
+.RPosts2Empty {
+    height: 0;
+    overflow: hidden;
+}
+
+.MapContainer {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.MapTitleContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.MapTitleContainer hr {
+    height: 0.5vh;
+    width: 30%;
+    background-color: var(--color-3);
+    border-radius: 5px;
+}
+
+.MapTitleContainer p {
+    font-size: 35px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.EndTitle {
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: var(--color-3);
+    margin-top: 10%;
+}
+
+.GlowingText {
+    font-size: 80px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-shadow: 0 0 11px #fff, 0 0 21px var(--color-4), 0 0 31px var(--color-4), 0 0 41px var(--color-4), 0 0 51px var(--color-4), 0 0 61px var(--color-4), 0 0 71px var(--color-4);
+}
+
+@media screen and (max-width:600px) {
+    .HmainContainer {
+        padding-top: 28%;
+    }
+
+    .HTitle {
+        font-size: 30px;
+        opacity: 0.8;
+    }
+
+    .HaboutP {
+        font-size: 20px;
+    }
+
+    .Habout {
+        opacity: 0.7;
+    }
+
+    .RecentPostContainer {
+        margin-top: 12%;
+    }
+
+    .RPTitleContainer hr {
+        width: 29%;
+    }
+
+    .RPosts1 {
+        height: fit-content;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 12%;
+    }
+
+    .RPosts1 a {
+        margin-top: 5%;
+    }
+
+    .RPosts2 {
+        display: none;
+    }
+    .MapContainer{
+        margin-top: 20%;
+    }
+    .MapTitleContainer p{
+        text-align: center;
+    }
+    .EndTitle{
+        border-radius: 20px;
+    }
+    .EndTitle p{
+        font-size: 45px;
+        text-align: center;
+    }
+}

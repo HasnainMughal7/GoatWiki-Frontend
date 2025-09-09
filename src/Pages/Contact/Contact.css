@@ -1,0 +1,178 @@
+:root {
+    --color-1: #DEF9C4;
+    --color-2: #9CDBA6;
+    --color-3: #50B498;
+    --color-4: #478485;
+
+    /* .lobster-two-regular {
+        font-family: "Lobster Two", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .bebas-neue-regular {
+         font-family: "Bebas Neue", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+        }
+        .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .comfortaa-<uniquifier> {
+        font-family: "Comfortaa", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+    }   
+    */
+}
+
+.MainCContainer {
+    margin-top: 5%;
+    height: 120vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ContactContainer1 {
+    height: 100%;
+    width: 100%;
+    /* background: url('/assets/LOGO.png');
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CreditContainer1 {
+    width: 46%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-3);
+    opacity: 0.9;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.CreditContainer1 h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.CreditContainer1 p{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 2%;
+}
+
+.ContactNavs{
+    width: 35%;
+    height: 10%;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-radius: 8px;
+    background-color: lightgreen;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.CreditContainer2 {
+    width: 46%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--color-3);
+    opacity: 0.9;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.CreditContainer2 h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+}
+
+.CreditContainer2 p{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.FollowImg{
+    width: 30%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.FollowImg img{
+    width: 25%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.CompanyContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--color-1);
+}
+
+.CompanyContainer p{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--color-3);
+    -webkit-text-stroke: 1px black;
+}
+
+@media screen and (max-width:600px){
+    .MainCContainer{
+        height: 200vh;
+    }
+    .ContactContainer1{
+        flex-direction: column;
+    }
+    .CreditContainer1{
+        width: 95%;
+        height: 50%;
+    }
+    .ContactContainer1 p{
+        text-align: center;
+    }
+    .ContactNavs{
+        width: 70%;
+        height: 10%;
+    }
+    .CreditContainer2{
+        width: 95%;
+        height: 45%;
+    }
+}
