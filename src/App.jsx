@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-d
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { useEffect } from 'react'
 import { initGA, logPageView } from './analytics';
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from './Components/Nav/Navbar.jsx'
 import Home from './Pages/Home/Home.jsx'
 import About from './Pages/Others/About.jsx'
@@ -37,49 +38,49 @@ const AppContent = ({ children }) => {
 
   let fetching = false
   useEffect(() => {
-    if(fetching) return
+    if (fetching) return
     fetching = true
     axios.get('https://goatwiki-backend-production.up.railway.app/api/getScripts')
-    .then((res) => {
+      .then((res) => {
 
-      const AnalyticsObj = res.data.find((dat) => dat.ScriptCategory === "analytics")
-      const AdsenseObj = res.data.find((dat) => dat.ScriptCategory === "adsense")
+        const AnalyticsObj = res.data.find((dat) => dat.ScriptCategory === "analytics")
+        const AdsenseObj = res.data.find((dat) => dat.ScriptCategory === "adsense")
 
-      if (AnalyticsObj) {
-        const MeasureID = AnalyticsObj.Sections[0].ScriptContent;
-        initGA(MeasureID);
-        logPageView(location.pathname + location.search)
-      }
-
-      if (AdsenseObj) {
-        // Inject AdSense Script
-        const htmlScript = AdsenseObj.Sections.find(section => section.ScriptType === "HtmlScriptTag");
-        if (htmlScript && !document.querySelector(`script[src*="pagead2.googlesyndication.com"]`)) {
-          const script = document.createElement("script")
-          script.async = true
-          script.src = extractSrcFromScript(htmlScript.ScriptContent)
-          script.crossOrigin = "anonymous"
-          document.head.appendChild(script)
+        if (AnalyticsObj) {
+          const MeasureID = AnalyticsObj.Sections[0].ScriptContent;
+          initGA(MeasureID);
+          logPageView(location.pathname + location.search)
         }
 
-        // Inject Meta Tag
-        const metaTag = AdsenseObj.Sections.find(section => section.ScriptType === "MetaTag");
-        if (metaTag && !document.querySelector(`meta[name="google-adsense-account"]`)) {
-          const meta = document.createElement("meta")
-          meta.name = "google-adsense-account"
-          meta.content = extractContentFromMeta(metaTag.ScriptContent)
-          document.head.appendChild(meta)
+        if (AdsenseObj) {
+          // Inject AdSense Script
+          const htmlScript = AdsenseObj.Sections.find(section => section.ScriptType === "HtmlScriptTag");
+          if (htmlScript && !document.querySelector(`script[src*="pagead2.googlesyndication.com"]`)) {
+            const script = document.createElement("script")
+            script.async = true
+            script.src = extractSrcFromScript(htmlScript.ScriptContent)
+            script.crossOrigin = "anonymous"
+            document.head.appendChild(script)
+          }
+
+          // Inject Meta Tag
+          const metaTag = AdsenseObj.Sections.find(section => section.ScriptType === "MetaTag");
+          if (metaTag && !document.querySelector(`meta[name="google-adsense-account"]`)) {
+            const meta = document.createElement("meta")
+            meta.name = "google-adsense-account"
+            meta.content = extractContentFromMeta(metaTag.ScriptContent)
+            document.head.appendChild(meta)
+          }
         }
-      }
-    })
-    .catch(err => console.error("Error fetching scripts:", err))
+      })
+      .catch(err => console.error("Error fetching scripts:", err))
   }, [location]);
 
   const extractSrcFromScript = (scriptString) => {
     const match = scriptString.match(/src="([^"]+)"/);
     return match ? match[1] : "";
   };
-  
+
   const extractContentFromMeta = (metaString) => {
     const match = metaString.match(/content="([^"]+)"/);
     return match ? match[1] : "";
@@ -87,6 +88,7 @@ const AppContent = ({ children }) => {
 
   return (
     <>
+      <Analytics />
       <ScrollToTop />
       <Navbar />
       {children}
